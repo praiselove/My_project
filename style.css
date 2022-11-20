@@ -1,0 +1,127 @@
+* {
+   margin: 0;
+   padding: 0;
+   box-sizing: border-box;
+}
+
+body {
+   font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+   background: url(../img/race.jpg);
+   background-size: cover;
+   background-repeat: no-repeat;
+   height: 100vh;
+   overflow: hidden;
+}
+
+h1 {
+   text-align: center;
+   color: brown;
+   margin-top: 30px;
+   font-size: 3em;
+   font-weight: bolder;
+   margin-bottom: 30px;
+}
+
+.container {
+   width: 80%;
+   height: 700px;
+   position: relative;
+   margin: 0 auto;
+}
+
+img {
+   width: 100%;
+   height: 100%;
+   object-fit: cover;
+}
+
+.slide-container {
+   height: 100%;
+   position: relative;
+   overflow: hidden;
+}
+
+.slides {
+   padding: 0;
+   margin: 0;
+   list-style: none;
+   position: relative;
+   height: 100%;
+   transition: transform 250ms ease-in;
+}
+
+.slide {
+   position: absolute;
+   top: 0;
+   bottom: 0;
+   width: 100%;
+}
+
+/* .icons {
+	display: none;
+}
+
+.slide-container:hover + .icons {
+	background-color: rgba(0, 0, 0, 0.7);
+	display: block;
+} */
+
+.btn {
+   position: absolute;
+   top: 50%;
+   transform: translateY(-50%);
+   padding: 20px;
+   background: transparent;
+   border: 0;
+   cursor: pointer;
+   color: burlywood;
+   font-size: 20px;
+   transition: 0.6s ease;
+   background-color:honeydew;
+}
+
+.btn:hover {
+   background-color: transparent;
+}
+
+.prev {
+   left: 20px;
+}
+
+.next {
+   right: 20px;
+}
+
+.text {
+   color: brown;
+   font-size: 2rem;
+   font-weight: bolder;
+   padding: 8px 12px;
+   position: absolute;
+   bottom: 8px;
+   width: 100%;
+   text-align: center;
+}
+
+.dots {
+   padding: 20px 0;
+   text-align: center;
+}
+
+.dot {
+   margin: 0 10px;
+   cursor: pointer;
+   width: 15px;
+   height: 15px;
+   border: 0;
+   border-radius: 50%;
+   background-color: wheat;
+}
+
+.dot:hover {
+   background-color: rgb(183, 143, 71);
+}
+
+.current-slide {
+   background: rgb(74, 52, 9);
+}
